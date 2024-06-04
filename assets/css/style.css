@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  min-height: 100vh;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Generic project styles */
+  font-size: 0.8125rem;
+  color: #212121;
+  font-family: helvetica, sans-serif;
+
+  background: url("../images/background_pattern.png");
+  background-position: center;
+  background-color: #7d978c;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12vh;
+  background: #c3decbed;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 1px 1px #3a3a3a;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header span {
+  height: 10rem;
+  border-radius: 3px;
+  font-family: "PT Serif", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #212121;
+  cursor: pointer;
+}
+
+header span:hover {
+  color: #83ae90;
+}
+
+.home-page {
+  background-color: #82ad90f2;
+  width: 85%;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 3px;
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.home-page h1 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #cde6d3;
+  border-radius: 5px;
+  color: #212121;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 1rem;
+  max-width: 200px;
+  min-width: 200px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #4e875f;
+  ;
+  color: #fff;
+  ;
+}
+
+.intro-text {
+  letter-spacing: 1px;
+  padding: 25px 15px;
+  align-self: flex-start;
+}
+
+
+/* Styles for quiz area */
+.quiz-page {
+  background: #82ad90f2;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+  border-radius: 3px;
+  padding: 30px;
+  height: 810px;
+}
+
+.quiz-page h1 {
+  font-size: 1.3rem;
+  color: #212121;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  }
+
+#question-image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 3px;
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  color: #212121;
+  font-weight: 500;
+  font-family: "PT Serif", Times, serif;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  background: #fff;
+  color: #212121;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #212121;
+  padding: 10px;
+  margin: 7px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* hover style for answer buttons - off for disabled after answering*/
+.btn:hover:not([disabled]) {
+  background: #373737;
+  color: #fff;
+}
+
+/* Change cursor to red for after answering a question */
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background: #1b4533;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+  width: 120px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background: #9cd0b9;
+}
+
+.incorrect {
+  background: #dabc93;
+}
+
+
+/* Footer styles taken from my previous PP1 Atlantic Dippers*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #212121;
+  padding: 2.5rem;
+  padding-top: 4rem;
+  font-size: 0.7rem;
+  background-color: #c4dac4f2;
+}
+
+/* Style footer logo */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  color: #212121;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-logo span {
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: "PT Serif", Times, serif;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 1rem;
+}
+
+.footer-logo a:hover {
+  color: #83ae90;
+}
+
+/* Style Footer social media icons */
+.social-media {
+  flex: 1;
+}
+
+#social-networks {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1.5rem;
+  color: #212121;
+  margin-right: 15px;
+}
+
+.social-media li {
+  display: inline-flex;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.social-media a {
+  color: #212121;
+}
+
+.social-media a:hover {
+  color: #83ae90;
+}
+
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+  .quiz-page {
+    height: 850px;
+  }
+
+  #question-image {
+    width: 500px;
+    height: 320px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  
+}
